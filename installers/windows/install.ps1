@@ -3,9 +3,9 @@
 
 param(
     [string]$InstallPath = "C:\Program Files\RF Transceiver System",
-    [switch]$CreateDesktopShortcut = $true,
-    [switch]$InstallService = $true,
-    [switch]$Force = $false
+    [switch]$CreateDesktopShortcut,
+    [switch]$InstallService,
+    [switch]$Force
 )
 
 # Check if running as administrator
@@ -76,8 +76,8 @@ npm install
 Write-Host "Building frontend..." -ForegroundColor Yellow
 npm run build
 
-# Create Windows Service
-if ($InstallService) {
+# Create Windows Service (default: true)
+if ($InstallService -or (-not $PSBoundParameters.ContainsKey('InstallService'))) {
     Write-Host "Installing Windows Service..." -ForegroundColor Yellow
     
     # Install NSSM (Non-Sucking Service Manager) if not present
@@ -103,8 +103,8 @@ if ($InstallService) {
     Write-Host "Windows Service installed successfully!" -ForegroundColor Green
 }
 
-# Create desktop shortcut
-if ($CreateDesktopShortcut) {
+# Create desktop shortcut (default: true)
+if ($CreateDesktopShortcut -or (-not $PSBoundParameters.ContainsKey('CreateDesktopShortcut'))) {
     Write-Host "Creating desktop shortcut..." -ForegroundColor Yellow
     $WshShell = New-Object -comObject WScript.Shell
     $Shortcut = $WshShell.CreateShortcut("$env:USERPROFILE\Desktop\RF Transceiver System.lnk")
