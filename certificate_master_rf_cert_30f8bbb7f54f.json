@@ -1,0 +1,617 @@
+{
+  "certificate_id": "master_rf_cert_30f8bbb7f54f",
+  "issued_at": "2025-09-29T00:34:02.888918",
+  "issued_by": "RF_Platform_Certification_Authority",
+  "certification_level": "ENTERPRISE",
+  "valid_until": "2026-09-29T00:34:02.888920",
+  "platform_version": "2.0.0",
+  "certifications": {
+    "rf_signal_path": {
+      "id": "rf_path_919c843e",
+      "component": "RF_Signal_Path",
+      "level": "CertificationLevel.ENTERPRISE",
+      "status": "CertificationStatus.PASSED",
+      "test_results": {
+        "test_suite": "rf_path_validation",
+        "tests": [
+          {
+            "name": "signal_integrity_test",
+            "description": "Signal-Integrität-Test",
+            "score": 0.95,
+            "passed": true,
+            "details": "Signal-Integrität innerhalb Spezifikation"
+          },
+          {
+            "name": "frequency_accuracy_test",
+            "description": "Frequenz-Genauigkeit-Test",
+            "score": 0.92,
+            "passed": true,
+            "details": "Frequenz-Genauigkeit: ±0.1 ppm"
+          },
+          {
+            "name": "power_accuracy_test",
+            "description": "Leistungs-Genauigkeit-Test",
+            "score": 0.88,
+            "passed": true,
+            "details": "Leistungs-Genauigkeit: ±0.5 dB"
+          },
+          {
+            "name": "noise_floor_test",
+            "description": "Rauschpegel-Test",
+            "score": 0.9,
+            "passed": true,
+            "details": "Rauschpegel: -120 dBm"
+          }
+        ],
+        "overall_score": 0.9125,
+        "timestamp": "2025-09-29T00:34:02.884213"
+      },
+      "audit_hash": "0f5a51262e37d6f2",
+      "issued_at": "2025-09-29 00:34:02.884287",
+      "expires_at": "2026-09-29 00:34:02.884289",
+      "issued_by": "RF_Certification_Authority",
+      "certificate_data": {
+        "overall_score": 0.9125,
+        "tests_passed": 4,
+        "total_tests": 4,
+        "certification_level": "ENTERPRISE"
+      }
+    },
+    "plugins": [
+      {
+        "plugin_name": "zigbee_protocol_handler",
+        "version": "1.0.0",
+        "certification_level": "CertificationLevel.ENTERPRISE",
+        "security_score": 0.9125,
+        "performance_score": 0.8875,
+        "compliance_score": 0.9500000000000001,
+        "test_coverage": 0.87,
+        "audit_trail": [
+          {
+            "timestamp": "2025-09-29T00:34:02.885124",
+            "action": "security_validation",
+            "result": [
+              {
+                "name": "code_injection_protection",
+                "description": "Schutz vor Code-Injection",
+                "score": 0.95,
+                "passed": true,
+                "details": "Keine Code-Injection-Vulnerabilities gefunden"
+              },
+              {
+                "name": "buffer_overflow_protection",
+                "description": "Schutz vor Buffer-Overflow",
+                "score": 0.9,
+                "passed": true,
+                "details": "Bounds-Checking implementiert"
+              },
+              {
+                "name": "memory_leak_protection",
+                "description": "Memory-Leak-Schutz",
+                "score": 0.88,
+                "passed": true,
+                "details": "Automatische Speicherverwaltung aktiv"
+              },
+              {
+                "name": "encryption_validation",
+                "description": "Verschlüsselungs-Validierung",
+                "score": 0.92,
+                "passed": true,
+                "details": "AES-256-Verschlüsselung verwendet"
+              }
+            ],
+            "score": 0.9125
+          },
+          {
+            "timestamp": "2025-09-29T00:34:02.885132",
+            "action": "performance_validation",
+            "result": [
+              {
+                "name": "latency_test",
+                "description": "Latenz-Test",
+                "score": 0.85,
+                "passed": true,
+                "details": "Durchschnittliche Latenz: 2.3ms"
+              },
+              {
+                "name": "throughput_test",
+                "description": "Durchsatz-Test",
+                "score": 0.9,
+                "passed": true,
+                "details": "Durchsatz: 150 Mbps"
+              },
+              {
+                "name": "cpu_usage_test",
+                "description": "CPU-Nutzung-Test",
+                "score": 0.88,
+                "passed": true,
+                "details": "CPU-Nutzung: 15%"
+              },
+              {
+                "name": "memory_usage_test",
+                "description": "Speicher-Nutzung-Test",
+                "score": 0.92,
+                "passed": true,
+                "details": "Speicher-Nutzung: 45 MB"
+              }
+            ],
+            "score": 0.8875
+          },
+          {
+            "timestamp": "2025-09-29T00:34:02.885135",
+            "action": "compliance_validation",
+            "result": [
+              {
+                "name": "license_compliance",
+                "description": "Lizenz-Compliance",
+                "score": 1.0,
+                "passed": true,
+                "details": "Open Source Lizenz eingehalten"
+              },
+              {
+                "name": "data_protection_compliance",
+                "description": "Datenschutz-Compliance",
+                "score": 0.95,
+                "passed": true,
+                "details": "DSGVO-konform implementiert"
+              },
+              {
+                "name": "security_standards_compliance",
+                "description": "Sicherheits-Standards",
+                "score": 0.9,
+                "passed": true,
+                "details": "ISO 27001-konform"
+              }
+            ],
+            "score": 0.9500000000000001
+          }
+        ],
+        "certificate_hash": "d1eab9d3ec1e809c4396860fba8174c589fcdbb2e9c816a85976696f6d6eb282"
+      },
+      {
+        "plugin_name": "lora_modulation_engine",
+        "version": "2.1.0",
+        "certification_level": "CertificationLevel.ENTERPRISE",
+        "security_score": 0.9125,
+        "performance_score": 0.8875,
+        "compliance_score": 0.9500000000000001,
+        "test_coverage": 0.87,
+        "audit_trail": [
+          {
+            "timestamp": "2025-09-29T00:34:02.885690",
+            "action": "security_validation",
+            "result": [
+              {
+                "name": "code_injection_protection",
+                "description": "Schutz vor Code-Injection",
+                "score": 0.95,
+                "passed": true,
+                "details": "Keine Code-Injection-Vulnerabilities gefunden"
+              },
+              {
+                "name": "buffer_overflow_protection",
+                "description": "Schutz vor Buffer-Overflow",
+                "score": 0.9,
+                "passed": true,
+                "details": "Bounds-Checking implementiert"
+              },
+              {
+                "name": "memory_leak_protection",
+                "description": "Memory-Leak-Schutz",
+                "score": 0.88,
+                "passed": true,
+                "details": "Automatische Speicherverwaltung aktiv"
+              },
+              {
+                "name": "encryption_validation",
+                "description": "Verschlüsselungs-Validierung",
+                "score": 0.92,
+                "passed": true,
+                "details": "AES-256-Verschlüsselung verwendet"
+              }
+            ],
+            "score": 0.9125
+          },
+          {
+            "timestamp": "2025-09-29T00:34:02.885696",
+            "action": "performance_validation",
+            "result": [
+              {
+                "name": "latency_test",
+                "description": "Latenz-Test",
+                "score": 0.85,
+                "passed": true,
+                "details": "Durchschnittliche Latenz: 2.3ms"
+              },
+              {
+                "name": "throughput_test",
+                "description": "Durchsatz-Test",
+                "score": 0.9,
+                "passed": true,
+                "details": "Durchsatz: 150 Mbps"
+              },
+              {
+                "name": "cpu_usage_test",
+                "description": "CPU-Nutzung-Test",
+                "score": 0.88,
+                "passed": true,
+                "details": "CPU-Nutzung: 15%"
+              },
+              {
+                "name": "memory_usage_test",
+                "description": "Speicher-Nutzung-Test",
+                "score": 0.92,
+                "passed": true,
+                "details": "Speicher-Nutzung: 45 MB"
+              }
+            ],
+            "score": 0.8875
+          },
+          {
+            "timestamp": "2025-09-29T00:34:02.885697",
+            "action": "compliance_validation",
+            "result": [
+              {
+                "name": "license_compliance",
+                "description": "Lizenz-Compliance",
+                "score": 1.0,
+                "passed": true,
+                "details": "Open Source Lizenz eingehalten"
+              },
+              {
+                "name": "data_protection_compliance",
+                "description": "Datenschutz-Compliance",
+                "score": 0.95,
+                "passed": true,
+                "details": "DSGVO-konform implementiert"
+              },
+              {
+                "name": "security_standards_compliance",
+                "description": "Sicherheits-Standards",
+                "score": 0.9,
+                "passed": true,
+                "details": "ISO 27001-konform"
+              }
+            ],
+            "score": 0.9500000000000001
+          }
+        ],
+        "certificate_hash": "df8e81737aa2eed4848eb50eaa3fb172adba4f49a9c79358fb8d7d1de39785ab"
+      },
+      {
+        "plugin_name": "eeg_signal_processor",
+        "version": "1.5.0",
+        "certification_level": "CertificationLevel.ENTERPRISE",
+        "security_score": 0.9125,
+        "performance_score": 0.8875,
+        "compliance_score": 0.9500000000000001,
+        "test_coverage": 0.87,
+        "audit_trail": [
+          {
+            "timestamp": "2025-09-29T00:34:02.886865",
+            "action": "security_validation",
+            "result": [
+              {
+                "name": "code_injection_protection",
+                "description": "Schutz vor Code-Injection",
+                "score": 0.95,
+                "passed": true,
+                "details": "Keine Code-Injection-Vulnerabilities gefunden"
+              },
+              {
+                "name": "buffer_overflow_protection",
+                "description": "Schutz vor Buffer-Overflow",
+                "score": 0.9,
+                "passed": true,
+                "details": "Bounds-Checking implementiert"
+              },
+              {
+                "name": "memory_leak_protection",
+                "description": "Memory-Leak-Schutz",
+                "score": 0.88,
+                "passed": true,
+                "details": "Automatische Speicherverwaltung aktiv"
+              },
+              {
+                "name": "encryption_validation",
+                "description": "Verschlüsselungs-Validierung",
+                "score": 0.92,
+                "passed": true,
+                "details": "AES-256-Verschlüsselung verwendet"
+              }
+            ],
+            "score": 0.9125
+          },
+          {
+            "timestamp": "2025-09-29T00:34:02.886874",
+            "action": "performance_validation",
+            "result": [
+              {
+                "name": "latency_test",
+                "description": "Latenz-Test",
+                "score": 0.85,
+                "passed": true,
+                "details": "Durchschnittliche Latenz: 2.3ms"
+              },
+              {
+                "name": "throughput_test",
+                "description": "Durchsatz-Test",
+                "score": 0.9,
+                "passed": true,
+                "details": "Durchsatz: 150 Mbps"
+              },
+              {
+                "name": "cpu_usage_test",
+                "description": "CPU-Nutzung-Test",
+                "score": 0.88,
+                "passed": true,
+                "details": "CPU-Nutzung: 15%"
+              },
+              {
+                "name": "memory_usage_test",
+                "description": "Speicher-Nutzung-Test",
+                "score": 0.92,
+                "passed": true,
+                "details": "Speicher-Nutzung: 45 MB"
+              }
+            ],
+            "score": 0.8875
+          },
+          {
+            "timestamp": "2025-09-29T00:34:02.886876",
+            "action": "compliance_validation",
+            "result": [
+              {
+                "name": "license_compliance",
+                "description": "Lizenz-Compliance",
+                "score": 1.0,
+                "passed": true,
+                "details": "Open Source Lizenz eingehalten"
+              },
+              {
+                "name": "data_protection_compliance",
+                "description": "Datenschutz-Compliance",
+                "score": 0.95,
+                "passed": true,
+                "details": "DSGVO-konform implementiert"
+              },
+              {
+                "name": "security_standards_compliance",
+                "description": "Sicherheits-Standards",
+                "score": 0.9,
+                "passed": true,
+                "details": "ISO 27001-konform"
+              }
+            ],
+            "score": 0.9500000000000001
+          }
+        ],
+        "certificate_hash": "982f69046471f8880ca47a52cf94cd1325589621c12ca30bc0ce2ada562b66ac"
+      },
+      {
+        "plugin_name": "compliance_monitor",
+        "version": "1.0.0",
+        "certification_level": "CertificationLevel.ENTERPRISE",
+        "security_score": 0.9125,
+        "performance_score": 0.8875,
+        "compliance_score": 0.9500000000000001,
+        "test_coverage": 0.87,
+        "audit_trail": [
+          {
+            "timestamp": "2025-09-29T00:34:02.887496",
+            "action": "security_validation",
+            "result": [
+              {
+                "name": "code_injection_protection",
+                "description": "Schutz vor Code-Injection",
+                "score": 0.95,
+                "passed": true,
+                "details": "Keine Code-Injection-Vulnerabilities gefunden"
+              },
+              {
+                "name": "buffer_overflow_protection",
+                "description": "Schutz vor Buffer-Overflow",
+                "score": 0.9,
+                "passed": true,
+                "details": "Bounds-Checking implementiert"
+              },
+              {
+                "name": "memory_leak_protection",
+                "description": "Memory-Leak-Schutz",
+                "score": 0.88,
+                "passed": true,
+                "details": "Automatische Speicherverwaltung aktiv"
+              },
+              {
+                "name": "encryption_validation",
+                "description": "Verschlüsselungs-Validierung",
+                "score": 0.92,
+                "passed": true,
+                "details": "AES-256-Verschlüsselung verwendet"
+              }
+            ],
+            "score": 0.9125
+          },
+          {
+            "timestamp": "2025-09-29T00:34:02.887501",
+            "action": "performance_validation",
+            "result": [
+              {
+                "name": "latency_test",
+                "description": "Latenz-Test",
+                "score": 0.85,
+                "passed": true,
+                "details": "Durchschnittliche Latenz: 2.3ms"
+              },
+              {
+                "name": "throughput_test",
+                "description": "Durchsatz-Test",
+                "score": 0.9,
+                "passed": true,
+                "details": "Durchsatz: 150 Mbps"
+              },
+              {
+                "name": "cpu_usage_test",
+                "description": "CPU-Nutzung-Test",
+                "score": 0.88,
+                "passed": true,
+                "details": "CPU-Nutzung: 15%"
+              },
+              {
+                "name": "memory_usage_test",
+                "description": "Speicher-Nutzung-Test",
+                "score": 0.92,
+                "passed": true,
+                "details": "Speicher-Nutzung: 45 MB"
+              }
+            ],
+            "score": 0.8875
+          },
+          {
+            "timestamp": "2025-09-29T00:34:02.887503",
+            "action": "compliance_validation",
+            "result": [
+              {
+                "name": "license_compliance",
+                "description": "Lizenz-Compliance",
+                "score": 1.0,
+                "passed": true,
+                "details": "Open Source Lizenz eingehalten"
+              },
+              {
+                "name": "data_protection_compliance",
+                "description": "Datenschutz-Compliance",
+                "score": 0.95,
+                "passed": true,
+                "details": "DSGVO-konform implementiert"
+              },
+              {
+                "name": "security_standards_compliance",
+                "description": "Sicherheits-Standards",
+                "score": 0.9,
+                "passed": true,
+                "details": "ISO 27001-konform"
+              }
+            ],
+            "score": 0.9500000000000001
+          }
+        ],
+        "certificate_hash": "d4458ee76cd9b7229c865f38479586363c700bd7568164a14811318a94806f75"
+      }
+    ],
+    "legal_compliance": {
+      "id": "legal_compliance_10671b92",
+      "component": "Legal_Compliance",
+      "level": "CertificationLevel.GOVERNMENT",
+      "status": "CertificationStatus.FAILED",
+      "test_results": {
+        "compliance_audit": {
+          "total_devices": 2,
+          "compliant_devices": 0,
+          "non_compliant_devices": 2,
+          "device_results": [
+            {
+              "device_id": "rtl2832u_auto_001",
+              "compliant": false,
+              "checks": [
+                {
+                  "check": "frequency_range",
+                  "passed": true,
+                  "details": "Frequenzbereich: 24.0-1800.0 MHz"
+                },
+                {
+                  "check": "power_limits",
+                  "passed": true,
+                  "details": "Max. Leistung: 10 dBm"
+                },
+                {
+                  "check": "certificates",
+                  "passed": false,
+                  "details": "Zertifikate: 0"
+                }
+              ],
+              "certificates": [],
+              "issues": [],
+              "timestamp": "2025-09-29T00:34:02.888220"
+            },
+            {
+              "device_id": "sx1276_auto_001",
+              "compliant": false,
+              "checks": [
+                {
+                  "check": "frequency_range",
+                  "passed": true,
+                  "details": "Frequenzbereich: 24.0-1800.0 MHz"
+                },
+                {
+                  "check": "power_limits",
+                  "passed": true,
+                  "details": "Max. Leistung: 10 dBm"
+                },
+                {
+                  "check": "certificates",
+                  "passed": false,
+                  "details": "Zertifikate: 0"
+                }
+              ],
+              "certificates": [],
+              "issues": [],
+              "timestamp": "2025-09-29T00:34:02.888236"
+            }
+          ],
+          "overall_compliant": false,
+          "timestamp": "2025-09-29T00:34:02.888216"
+        },
+        "legal_tests": {
+          "test_suite": "legal_compliance_validation",
+          "tests": [
+            {
+              "name": "frequency_regulation_compliance",
+              "description": "Frequenz-Regulierungs-Compliance",
+              "score": 0.95,
+              "passed": true,
+              "details": "Alle Frequenzen regulierungskonform"
+            },
+            {
+              "name": "power_limit_compliance",
+              "description": "Leistungs-Limit-Compliance",
+              "score": 0.98,
+              "passed": true,
+              "details": "Alle Leistungen unter Limits"
+            },
+            {
+              "name": "emission_compliance",
+              "description": "Emissions-Compliance",
+              "score": 0.92,
+              "passed": true,
+              "details": "Harmonische Emissions unter Limits"
+            },
+            {
+              "name": "certification_compliance",
+              "description": "Zertifikats-Compliance",
+              "score": 0.9,
+              "passed": true,
+              "details": "Alle Geräte zertifiziert"
+            }
+          ],
+          "overall_score": 0.9375,
+          "timestamp": "2025-09-29T00:34:02.888254"
+        },
+        "overall_score": 0.46875
+      },
+      "audit_hash": "8161671e1e881062",
+      "issued_at": "2025-09-29 00:34:02.888429",
+      "expires_at": null,
+      "issued_by": "Legal_Compliance_Authority",
+      "certificate_data": {
+        "compliance_score": 0.0,
+        "legal_score": 0.9375,
+        "overall_score": 0.46875,
+        "certification_level": "GOVERNMENT"
+      }
+    }
+  },
+  "overall_status": "FAILED",
+  "audit_log": "[\n  {\n    \"timestamp\": \"2025-09-29T00:34:02.884439\",\n    \"action\": \"RF path certification completed\",\n    \"data\": {\n      \"id\": \"rf_path_919c843e\",\n      \"component\": \"RF_Signal_Path\",\n      \"level\": \"CertificationLevel.ENTERPRISE\",\n      \"status\": \"CertificationStatus.PASSED\",\n      \"test_results\": {\n        \"test_suite\": \"rf_path_validation\",\n        \"tests\": [\n          {\n            \"name\": \"signal_integrity_test\",\n            \"description\": \"Signal-Integrit\\u00e4t-Test\",\n            \"score\": 0.95,\n            \"passed\": true,\n            \"details\": \"Signal-Integrit\\u00e4t innerhalb Spezifikation\"\n          },\n          {\n            \"name\": \"frequency_accuracy_test\",\n            \"description\": \"Frequenz-Genauigkeit-Test\",\n            \"score\": 0.92,\n            \"passed\": true,\n            \"details\": \"Frequenz-Genauigkeit: \\u00b10.1 ppm\"\n          },\n          {\n            \"name\": \"power_accuracy_test\",\n            \"description\": \"Leistungs-Genauigkeit-Test\",\n            \"score\": 0.88,\n            \"passed\": true,\n            \"details\": \"Leistungs-Genauigkeit: \\u00b10.5 dB\"\n          },\n          {\n            \"name\": \"noise_floor_test\",\n            \"description\": \"Rauschpegel-Test\",\n            \"score\": 0.9,\n            \"passed\": true,\n            \"details\": \"Rauschpegel: -120 dBm\"\n          }\n        ],\n        \"overall_score\": 0.9125,\n        \"timestamp\": \"2025-09-29T00:34:02.884213\"\n      },\n      \"audit_hash\": \"0f5a51262e37d6f2\",\n      \"issued_at\": \"2025-09-29 00:34:02.884287\",\n      \"expires_at\": \"2026-09-29 00:34:02.884289\",\n      \"issued_by\": \"RF_Certification_Authority\",\n      \"certificate_data\": {\n        \"overall_score\": 0.9125,\n        \"tests_passed\": 4,\n        \"total_tests\": 4,\n        \"certification_level\": \"ENTERPRISE\"\n      }\n    },\n    \"hash\": \"a20cf7f91135d324\"\n  },\n  {\n    \"timestamp\": \"2025-09-29T00:34:02.885298\",\n    \"action\": \"Plugin certification completed: zigbee_protocol_handler\",\n    \"data\": {\n      \"id\": \"plugin_zigbee_protocol_handler_e696452f\",\n      \"component\": \"Plugin_zigbee_protocol_handler\",\n      \"level\": \"CertificationLevel.ENTERPRISE\",\n      \"status\": \"CertificationStatus.PASSED\",\n      \"test_results\": {\n        \"security_score\": 0.9125,\n        \"performance_score\": 0.8875,\n        \"compliance_score\": 0.9500000000000001,\n        \"test_coverage\": 0.87,\n        \"audit_trail\": [\n          {\n            \"timestamp\": \"2025-09-29T00:34:02.885124\",\n            \"action\": \"security_validation\",\n            \"result\": [\n              {\n                \"name\": \"code_injection_protection\",\n                \"description\": \"Schutz vor Code-Injection\",\n                \"score\": 0.95,\n                \"passed\": true,\n                \"details\": \"Keine Code-Injection-Vulnerabilities gefunden\"\n              },\n              {\n                \"name\": \"buffer_overflow_protection\",\n                \"description\": \"Schutz vor Buffer-Overflow\",\n                \"score\": 0.9,\n                \"passed\": true,\n                \"details\": \"Bounds-Checking implementiert\"\n              },\n              {\n                \"name\": \"memory_leak_protection\",\n                \"description\": \"Memory-Leak-Schutz\",\n                \"score\": 0.88,\n                \"passed\": true,\n                \"details\": \"Automatische Speicherverwaltung aktiv\"\n              },\n              {\n                \"name\": \"encryption_validation\",\n                \"description\": \"Verschl\\u00fcsselungs-Validierung\",\n                \"score\": 0.92,\n                \"passed\": true,\n                \"details\": \"AES-256-Verschl\\u00fcsselung verwendet\"\n              }\n            ],\n            \"score\": 0.9125\n          },\n          {\n            \"timestamp\": \"2025-09-29T00:34:02.885132\",\n            \"action\": \"performance_validation\",\n            \"result\": [\n              {\n                \"name\": \"latency_test\",\n                \"description\": \"Latenz-Test\",\n                \"score\": 0.85,\n                \"passed\": true,\n                \"details\": \"Durchschnittliche Latenz: 2.3ms\"\n              },\n              {\n                \"name\": \"throughput_test\",\n                \"description\": \"Durchsatz-Test\",\n                \"score\": 0.9,\n                \"passed\": true,\n                \"details\": \"Durchsatz: 150 Mbps\"\n              },\n              {\n                \"name\": \"cpu_usage_test\",\n                \"description\": \"CPU-Nutzung-Test\",\n                \"score\": 0.88,\n                \"passed\": true,\n                \"details\": \"CPU-Nutzung: 15%\"\n              },\n              {\n                \"name\": \"memory_usage_test\",\n                \"description\": \"Speicher-Nutzung-Test\",\n                \"score\": 0.92,\n                \"passed\": true,\n                \"details\": \"Speicher-Nutzung: 45 MB\"\n              }\n            ],\n            \"score\": 0.8875\n          },\n          {\n            \"timestamp\": \"2025-09-29T00:34:02.885135\",\n            \"action\": \"compliance_validation\",\n            \"result\": [\n              {\n                \"name\": \"license_compliance\",\n                \"description\": \"Lizenz-Compliance\",\n                \"score\": 1.0,\n                \"passed\": true,\n                \"details\": \"Open Source Lizenz eingehalten\"\n              },\n              {\n                \"name\": \"data_protection_compliance\",\n                \"description\": \"Datenschutz-Compliance\",\n                \"score\": 0.95,\n                \"passed\": true,\n                \"details\": \"DSGVO-konform implementiert\"\n              },\n              {\n                \"name\": \"security_standards_compliance\",\n                \"description\": \"Sicherheits-Standards\",\n                \"score\": 0.9,\n                \"passed\": true,\n                \"details\": \"ISO 27001-konform\"\n              }\n            ],\n            \"score\": 0.9500000000000001\n          }\n        ]\n      },\n      \"audit_hash\": \"d1eab9d3ec1e809c\",\n      \"issued_at\": \"2025-09-29 00:34:02.885201\",\n      \"expires_at\": \"2026-09-29 00:34:02.885202\",\n      \"issued_by\": \"Plugin_Certification_Authority\",\n      \"certificate_data\": {\n        \"plugin_name\": \"zigbee_protocol_handler\",\n        \"version\": \"1.0.0\",\n        \"certification_hash\": \"d1eab9d3ec1e809c4396860fba8174c589fcdbb2e9c816a85976696f6d6eb282\"\n      }\n    },\n    \"hash\": \"52cd8e67a4fc116f\"\n  },\n  {\n    \"timestamp\": \"2025-09-29T00:34:02.885885\",\n    \"action\": \"Plugin certification completed: lora_modulation_engine\",\n    \"data\": {\n      \"id\": \"plugin_lora_modulation_engine_c417af39\",\n      \"component\": \"Plugin_lora_modulation_engine\",\n      \"level\": \"CertificationLevel.ENTERPRISE\",\n      \"status\": \"CertificationStatus.PASSED\",\n      \"test_results\": {\n        \"security_score\": 0.9125,\n        \"performance_score\": 0.8875,\n        \"compliance_score\": 0.9500000000000001,\n        \"test_coverage\": 0.87,\n        \"audit_trail\": [\n          {\n            \"timestamp\": \"2025-09-29T00:34:02.885690\",\n            \"action\": \"security_validation\",\n            \"result\": [\n              {\n                \"name\": \"code_injection_protection\",\n                \"description\": \"Schutz vor Code-Injection\",\n                \"score\": 0.95,\n                \"passed\": true,\n                \"details\": \"Keine Code-Injection-Vulnerabilities gefunden\"\n              },\n              {\n                \"name\": \"buffer_overflow_protection\",\n                \"description\": \"Schutz vor Buffer-Overflow\",\n                \"score\": 0.9,\n                \"passed\": true,\n                \"details\": \"Bounds-Checking implementiert\"\n              },\n              {\n                \"name\": \"memory_leak_protection\",\n                \"description\": \"Memory-Leak-Schutz\",\n                \"score\": 0.88,\n                \"passed\": true,\n                \"details\": \"Automatische Speicherverwaltung aktiv\"\n              },\n              {\n                \"name\": \"encryption_validation\",\n                \"description\": \"Verschl\\u00fcsselungs-Validierung\",\n                \"score\": 0.92,\n                \"passed\": true,\n                \"details\": \"AES-256-Verschl\\u00fcsselung verwendet\"\n              }\n            ],\n            \"score\": 0.9125\n          },\n          {\n            \"timestamp\": \"2025-09-29T00:34:02.885696\",\n            \"action\": \"performance_validation\",\n            \"result\": [\n              {\n                \"name\": \"latency_test\",\n                \"description\": \"Latenz-Test\",\n                \"score\": 0.85,\n                \"passed\": true,\n                \"details\": \"Durchschnittliche Latenz: 2.3ms\"\n              },\n              {\n                \"name\": \"throughput_test\",\n                \"description\": \"Durchsatz-Test\",\n                \"score\": 0.9,\n                \"passed\": true,\n                \"details\": \"Durchsatz: 150 Mbps\"\n              },\n              {\n                \"name\": \"cpu_usage_test\",\n                \"description\": \"CPU-Nutzung-Test\",\n                \"score\": 0.88,\n                \"passed\": true,\n                \"details\": \"CPU-Nutzung: 15%\"\n              },\n              {\n                \"name\": \"memory_usage_test\",\n                \"description\": \"Speicher-Nutzung-Test\",\n                \"score\": 0.92,\n                \"passed\": true,\n                \"details\": \"Speicher-Nutzung: 45 MB\"\n              }\n            ],\n            \"score\": 0.8875\n          },\n          {\n            \"timestamp\": \"2025-09-29T00:34:02.885697\",\n            \"action\": \"compliance_validation\",\n            \"result\": [\n              {\n                \"name\": \"license_compliance\",\n                \"description\": \"Lizenz-Compliance\",\n                \"score\": 1.0,\n                \"passed\": true,\n                \"details\": \"Open Source Lizenz eingehalten\"\n              },\n              {\n                \"name\": \"data_protection_compliance\",\n                \"description\": \"Datenschutz-Compliance\",\n                \"score\": 0.95,\n                \"passed\": true,\n                \"details\": \"DSGVO-konform implementiert\"\n              },\n              {\n                \"name\": \"security_standards_compliance\",\n                \"description\": \"Sicherheits-Standards\",\n                \"score\": 0.9,\n                \"passed\": true,\n                \"details\": \"ISO 27001-konform\"\n              }\n            ],\n            \"score\": 0.9500000000000001\n          }\n        ]\n      },\n      \"audit_hash\": \"df8e81737aa2eed4\",\n      \"issued_at\": \"2025-09-29 00:34:02.885756\",\n      \"expires_at\": \"2026-09-29 00:34:02.885757\",\n      \"issued_by\": \"Plugin_Certification_Authority\",\n      \"certificate_data\": {\n        \"plugin_name\": \"lora_modulation_engine\",\n        \"version\": \"2.1.0\",\n        \"certification_hash\": \"df8e81737aa2eed4848eb50eaa3fb172adba4f49a9c79358fb8d7d1de39785ab\"\n      }\n    },\n    \"hash\": \"8436c8625cc21146\"\n  },\n  {\n    \"timestamp\": \"2025-09-29T00:34:02.887028\",\n    \"action\": \"Plugin certification completed: eeg_signal_processor\",\n    \"data\": {\n      \"id\": \"plugin_eeg_signal_processor_4b4e7cf1\",\n      \"component\": \"Plugin_eeg_signal_processor\",\n      \"level\": \"CertificationLevel.ENTERPRISE\",\n      \"status\": \"CertificationStatus.PASSED\",\n      \"test_results\": {\n        \"security_score\": 0.9125,\n        \"performance_score\": 0.8875,\n        \"compliance_score\": 0.9500000000000001,\n        \"test_coverage\": 0.87,\n        \"audit_trail\": [\n          {\n            \"timestamp\": \"2025-09-29T00:34:02.886865\",\n            \"action\": \"security_validation\",\n            \"result\": [\n              {\n                \"name\": \"code_injection_protection\",\n                \"description\": \"Schutz vor Code-Injection\",\n                \"score\": 0.95,\n                \"passed\": true,\n                \"details\": \"Keine Code-Injection-Vulnerabilities gefunden\"\n              },\n              {\n                \"name\": \"buffer_overflow_protection\",\n                \"description\": \"Schutz vor Buffer-Overflow\",\n                \"score\": 0.9,\n                \"passed\": true,\n                \"details\": \"Bounds-Checking implementiert\"\n              },\n              {\n                \"name\": \"memory_leak_protection\",\n                \"description\": \"Memory-Leak-Schutz\",\n                \"score\": 0.88,\n                \"passed\": true,\n                \"details\": \"Automatische Speicherverwaltung aktiv\"\n              },\n              {\n                \"name\": \"encryption_validation\",\n                \"description\": \"Verschl\\u00fcsselungs-Validierung\",\n                \"score\": 0.92,\n                \"passed\": true,\n                \"details\": \"AES-256-Verschl\\u00fcsselung verwendet\"\n              }\n            ],\n            \"score\": 0.9125\n          },\n          {\n            \"timestamp\": \"2025-09-29T00:34:02.886874\",\n            \"action\": \"performance_validation\",\n            \"result\": [\n              {\n                \"name\": \"latency_test\",\n                \"description\": \"Latenz-Test\",\n                \"score\": 0.85,\n                \"passed\": true,\n                \"details\": \"Durchschnittliche Latenz: 2.3ms\"\n              },\n              {\n                \"name\": \"throughput_test\",\n                \"description\": \"Durchsatz-Test\",\n                \"score\": 0.9,\n                \"passed\": true,\n                \"details\": \"Durchsatz: 150 Mbps\"\n              },\n              {\n                \"name\": \"cpu_usage_test\",\n                \"description\": \"CPU-Nutzung-Test\",\n                \"score\": 0.88,\n                \"passed\": true,\n                \"details\": \"CPU-Nutzung: 15%\"\n              },\n              {\n                \"name\": \"memory_usage_test\",\n                \"description\": \"Speicher-Nutzung-Test\",\n                \"score\": 0.92,\n                \"passed\": true,\n                \"details\": \"Speicher-Nutzung: 45 MB\"\n              }\n            ],\n            \"score\": 0.8875\n          },\n          {\n            \"timestamp\": \"2025-09-29T00:34:02.886876\",\n            \"action\": \"compliance_validation\",\n            \"result\": [\n              {\n                \"name\": \"license_compliance\",\n                \"description\": \"Lizenz-Compliance\",\n                \"score\": 1.0,\n                \"passed\": true,\n                \"details\": \"Open Source Lizenz eingehalten\"\n              },\n              {\n                \"name\": \"data_protection_compliance\",\n                \"description\": \"Datenschutz-Compliance\",\n                \"score\": 0.95,\n                \"passed\": true,\n                \"details\": \"DSGVO-konform implementiert\"\n              },\n              {\n                \"name\": \"security_standards_compliance\",\n                \"description\": \"Sicherheits-Standards\",\n                \"score\": 0.9,\n                \"passed\": true,\n                \"details\": \"ISO 27001-konform\"\n              }\n            ],\n            \"score\": 0.9500000000000001\n          }\n        ]\n      },\n      \"audit_hash\": \"982f69046471f888\",\n      \"issued_at\": \"2025-09-29 00:34:02.886947\",\n      \"expires_at\": \"2026-09-29 00:34:02.886948\",\n      \"issued_by\": \"Plugin_Certification_Authority\",\n      \"certificate_data\": {\n        \"plugin_name\": \"eeg_signal_processor\",\n        \"version\": \"1.5.0\",\n        \"certification_hash\": \"982f69046471f8880ca47a52cf94cd1325589621c12ca30bc0ce2ada562b66ac\"\n      }\n    },\n    \"hash\": \"76a220c030ecc81a\"\n  },\n  {\n    \"timestamp\": \"2025-09-29T00:34:02.887629\",\n    \"action\": \"Plugin certification completed: compliance_monitor\",\n    \"data\": {\n      \"id\": \"plugin_compliance_monitor_082efa4b\",\n      \"component\": \"Plugin_compliance_monitor\",\n      \"level\": \"CertificationLevel.ENTERPRISE\",\n      \"status\": \"CertificationStatus.PASSED\",\n      \"test_results\": {\n        \"security_score\": 0.9125,\n        \"performance_score\": 0.8875,\n        \"compliance_score\": 0.9500000000000001,\n        \"test_coverage\": 0.87,\n        \"audit_trail\": [\n          {\n            \"timestamp\": \"2025-09-29T00:34:02.887496\",\n            \"action\": \"security_validation\",\n            \"result\": [\n              {\n                \"name\": \"code_injection_protection\",\n                \"description\": \"Schutz vor Code-Injection\",\n                \"score\": 0.95,\n                \"passed\": true,\n                \"details\": \"Keine Code-Injection-Vulnerabilities gefunden\"\n              },\n              {\n                \"name\": \"buffer_overflow_protection\",\n                \"description\": \"Schutz vor Buffer-Overflow\",\n                \"score\": 0.9,\n                \"passed\": true,\n                \"details\": \"Bounds-Checking implementiert\"\n              },\n              {\n                \"name\": \"memory_leak_protection\",\n                \"description\": \"Memory-Leak-Schutz\",\n                \"score\": 0.88,\n                \"passed\": true,\n                \"details\": \"Automatische Speicherverwaltung aktiv\"\n              },\n              {\n                \"name\": \"encryption_validation\",\n                \"description\": \"Verschl\\u00fcsselungs-Validierung\",\n                \"score\": 0.92,\n                \"passed\": true,\n                \"details\": \"AES-256-Verschl\\u00fcsselung verwendet\"\n              }\n            ],\n            \"score\": 0.9125\n          },\n          {\n            \"timestamp\": \"2025-09-29T00:34:02.887501\",\n            \"action\": \"performance_validation\",\n            \"result\": [\n              {\n                \"name\": \"latency_test\",\n                \"description\": \"Latenz-Test\",\n                \"score\": 0.85,\n                \"passed\": true,\n                \"details\": \"Durchschnittliche Latenz: 2.3ms\"\n              },\n              {\n                \"name\": \"throughput_test\",\n                \"description\": \"Durchsatz-Test\",\n                \"score\": 0.9,\n                \"passed\": true,\n                \"details\": \"Durchsatz: 150 Mbps\"\n              },\n              {\n                \"name\": \"cpu_usage_test\",\n                \"description\": \"CPU-Nutzung-Test\",\n                \"score\": 0.88,\n                \"passed\": true,\n                \"details\": \"CPU-Nutzung: 15%\"\n              },\n              {\n                \"name\": \"memory_usage_test\",\n                \"description\": \"Speicher-Nutzung-Test\",\n                \"score\": 0.92,\n                \"passed\": true,\n                \"details\": \"Speicher-Nutzung: 45 MB\"\n              }\n            ],\n            \"score\": 0.8875\n          },\n          {\n            \"timestamp\": \"2025-09-29T00:34:02.887503\",\n            \"action\": \"compliance_validation\",\n            \"result\": [\n              {\n                \"name\": \"license_compliance\",\n                \"description\": \"Lizenz-Compliance\",\n                \"score\": 1.0,\n                \"passed\": true,\n                \"details\": \"Open Source Lizenz eingehalten\"\n              },\n              {\n                \"name\": \"data_protection_compliance\",\n                \"description\": \"Datenschutz-Compliance\",\n                \"score\": 0.95,\n                \"passed\": true,\n                \"details\": \"DSGVO-konform implementiert\"\n              },\n              {\n                \"name\": \"security_standards_compliance\",\n                \"description\": \"Sicherheits-Standards\",\n                \"score\": 0.9,\n                \"passed\": true,\n                \"details\": \"ISO 27001-konform\"\n              }\n            ],\n            \"score\": 0.9500000000000001\n          }\n        ]\n      },\n      \"audit_hash\": \"d4458ee76cd9b722\",\n      \"issued_at\": \"2025-09-29 00:34:02.887552\",\n      \"expires_at\": \"2026-09-29 00:34:02.887553\",\n      \"issued_by\": \"Plugin_Certification_Authority\",\n      \"certificate_data\": {\n        \"plugin_name\": \"compliance_monitor\",\n        \"version\": \"1.0.0\",\n        \"certification_hash\": \"d4458ee76cd9b7229c865f38479586363c700bd7568164a14811318a94806f75\"\n      }\n    },\n    \"hash\": \"6cbe5c38bcf3e09c\"\n  },\n  {\n    \"timestamp\": \"2025-09-29T00:34:02.888533\",\n    \"action\": \"Legal compliance certification completed\",\n    \"data\": {\n      \"id\": \"legal_compliance_10671b92\",\n      \"component\": \"Legal_Compliance\",\n      \"level\": \"CertificationLevel.GOVERNMENT\",\n      \"status\": \"CertificationStatus.FAILED\",\n      \"test_results\": {\n        \"compliance_audit\": {\n          \"total_devices\": 2,\n          \"compliant_devices\": 0,\n          \"non_compliant_devices\": 2,\n          \"device_results\": [\n            {\n              \"device_id\": \"rtl2832u_auto_001\",\n              \"compliant\": false,\n              \"checks\": [\n                {\n                  \"check\": \"frequency_range\",\n                  \"passed\": true,\n                  \"details\": \"Frequenzbereich: 24.0-1800.0 MHz\"\n                },\n                {\n                  \"check\": \"power_limits\",\n                  \"passed\": true,\n                  \"details\": \"Max. Leistung: 10 dBm\"\n                },\n                {\n                  \"check\": \"certificates\",\n                  \"passed\": false,\n                  \"details\": \"Zertifikate: 0\"\n                }\n              ],\n              \"certificates\": [],\n              \"issues\": [],\n              \"timestamp\": \"2025-09-29T00:34:02.888220\"\n            },\n            {\n              \"device_id\": \"sx1276_auto_001\",\n              \"compliant\": false,\n              \"checks\": [\n                {\n                  \"check\": \"frequency_range\",\n                  \"passed\": true,\n                  \"details\": \"Frequenzbereich: 24.0-1800.0 MHz\"\n                },\n                {\n                  \"check\": \"power_limits\",\n                  \"passed\": true,\n                  \"details\": \"Max. Leistung: 10 dBm\"\n                },\n                {\n                  \"check\": \"certificates\",\n                  \"passed\": false,\n                  \"details\": \"Zertifikate: 0\"\n                }\n              ],\n              \"certificates\": [],\n              \"issues\": [],\n              \"timestamp\": \"2025-09-29T00:34:02.888236\"\n            }\n          ],\n          \"overall_compliant\": false,\n          \"timestamp\": \"2025-09-29T00:34:02.888216\"\n        },\n        \"legal_tests\": {\n          \"test_suite\": \"legal_compliance_validation\",\n          \"tests\": [\n            {\n              \"name\": \"frequency_regulation_compliance\",\n              \"description\": \"Frequenz-Regulierungs-Compliance\",\n              \"score\": 0.95,\n              \"passed\": true,\n              \"details\": \"Alle Frequenzen regulierungskonform\"\n            },\n            {\n              \"name\": \"power_limit_compliance\",\n              \"description\": \"Leistungs-Limit-Compliance\",\n              \"score\": 0.98,\n              \"passed\": true,\n              \"details\": \"Alle Leistungen unter Limits\"\n            },\n            {\n              \"name\": \"emission_compliance\",\n              \"description\": \"Emissions-Compliance\",\n              \"score\": 0.92,\n              \"passed\": true,\n              \"details\": \"Harmonische Emissions unter Limits\"\n            },\n            {\n              \"name\": \"certification_compliance\",\n              \"description\": \"Zertifikats-Compliance\",\n              \"score\": 0.9,\n              \"passed\": true,\n              \"details\": \"Alle Ger\\u00e4te zertifiziert\"\n            }\n          ],\n          \"overall_score\": 0.9375,\n          \"timestamp\": \"2025-09-29T00:34:02.888254\"\n        },\n        \"overall_score\": 0.46875\n      },\n      \"audit_hash\": \"8161671e1e881062\",\n      \"issued_at\": \"2025-09-29 00:34:02.888429\",\n      \"expires_at\": null,\n      \"issued_by\": \"Legal_Compliance_Authority\",\n      \"certificate_data\": {\n        \"compliance_score\": 0.0,\n        \"legal_score\": 0.9375,\n        \"overall_score\": 0.46875,\n        \"certification_level\": \"GOVERNMENT\"\n      }\n    },\n    \"hash\": \"1ab6bb177cc78069\"\n  }\n]",
+  "certificate_hash": "3f49a6c3937c1b1b2d3556355ee259fe679455a6c1b82ebadbdf2d106c42939f"
+}

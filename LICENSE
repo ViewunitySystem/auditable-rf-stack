@@ -1,0 +1,64 @@
+MIT License
+
+Copyright (c) 2025 Raymond Demitrio Dr. Tel
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+## Additional Terms and Conditions
+
+### RF Regulatory Compliance
+This software is designed for use with radio frequency (RF) equipment. Users are 
+responsible for ensuring compliance with all applicable RF regulations in their 
+jurisdiction, including but not limited to:
+- Federal Communications Commission (FCC) regulations (United States)
+- European Telecommunications Standards Institute (ETSI) regulations (Europe)
+- Industry Canada regulations (Canada)
+- Other national and international RF regulations
+
+### Hardware Compatibility
+This software is designed to work with various RF hardware devices. Hardware 
+compatibility is not guaranteed and users should verify compatibility before 
+use. The authors are not responsible for any damage to hardware devices.
+
+### Security and Privacy
+This software may handle sensitive data including RF signals and device 
+communications. Users are responsible for implementing appropriate security 
+measures and ensuring compliance with applicable privacy regulations.
+
+### Third-Party Components
+This software may include third-party components with their own licenses. 
+Please refer to the individual component licenses for additional terms and 
+conditions.
+
+### Warranty Disclaimer
+THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE 
+SOFTWARE.
+
+### Contact Information
+For questions regarding this license or the software, please contact:
+Raymond Demitrio Dr. Tel
+Email: contact@tel1.nl
+Website: https://tel1.nl

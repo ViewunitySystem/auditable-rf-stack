@@ -1,0 +1,142 @@
+version: '3.8'
+
+services:
+  rf-backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    container_name: rf-transceiver-backend
+    ports:
+      - "8765:8765"  # WebSocket port
+      - "8000:8000"  # HTTP port
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./certs:/app/certs
+      - /dev:/dev:ro  # Read-only access to devices
+    devices:
+      - /dev/ttyUSB0:/dev/ttyUSB0  # USB serial device
+      - /dev/ttyACM0:/dev/ttyACM0  # USB CDC device
+    environment:
+      - PYTHONPATH=/app
+      - RF_SERIAL_PORT=/dev/ttyUSB0
+      - RF_BAUD_RATE=115200
+      - RF_LOG_LEVEL=INFO
+      - RF_AUDIT_ENABLED=true
+    restart: unless-stopped
+    networks:
+      - rf-network
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  rf-frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    container_name: rf-transceiver-frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - VITE_API_URL=ws://localhost:8765
+      - VITE_BACKEND_URL=http://rf-backend:8000
+    depends_on:
+      - rf-backend
+    restart: unless-stopped
+    networks:
+      - rf-network
+
+  nginx:
+    image: nginx:alpine
+    container_name: rf-transceiver-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/ssl:/etc/nginx/ssl:ro
+      - ./static:/usr/share/nginx/html:ro
+    depends_on:
+      - rf-backend
+      - rf-frontend
+    restart: unless-stopped
+    networks:
+      - rf-network
+
+  redis:
+    image: redis:7-alpine
+    container_name: rf-transceiver-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    restart: unless-stopped
+    networks:
+      - rf-network
+    command: redis-server --appendonly yes
+
+  postgres:
+    image: postgres:15-alpine
+    container_name: rf-transceiver-postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - ./sql/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    environment:
+      - POSTGRES_DB=rf_transceiver
+      - POSTGRES_USER=rfuser
+      - POSTGRES_PASSWORD=rfpassword
+    restart: unless-stopped
+    networks:
+      - rf-network
+
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: rf-transceiver-prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus-data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--storage.tsdb.retention.time=200h'
+      - '--web.enable-lifecycle'
+    restart: unless-stopped
+    networks:
+      - rf-network
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: rf-transceiver-grafana
+    ports:
+      - "3001:3000"
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - ./monitoring/grafana/dashboards:/etc/grafana/provisioning/dashboards:ro
+      - ./monitoring/grafana/datasources:/etc/grafana/provisioning/datasources:ro
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_USERS_ALLOW_SIGN_UP=false
+    restart: unless-stopped
+    networks:
+      - rf-network
+
+volumes:
+  redis-data:
+  postgres-data:
+  prometheus-data:
+  grafana-data:
+
+networks:
+  rf-network:
+    driver: bridge

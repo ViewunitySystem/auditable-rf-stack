@@ -1,0 +1,3 @@
+Component,Status,Score,Certification_Level
+RF_Signal_Path,passed,0.912,ENTERPRISE
+Legal_Compliance,failed,0.469,GOVERNMENT
