@@ -93,7 +93,7 @@ Hardware → Serial Port → Backend → WebSocket → Frontend → User
 
 ```bash
 # Repository klonen
-git clone https://github.com/rf-stack/core.git
+git clone https://github.com/ViewunitySystem/auditable-rf-stack.git
 cd rf-stack-core
 
 # In das Projektverzeichnis wechseln
@@ -1376,7 +1376,7 @@ Dieses Technical Implementation Guide bietet eine vollständige Anleitung zur Im
 ---
 
 **Kontakt:** gentlyoverdone@outlook.com  
-**Community:** https://github.com/rf-stack/core  
+**Community:** https://github.com/ViewunitySystem/auditable-rf-stack  
 **Spenden:** https://tel1.nl (siehe Footer)  
 
 **Dankjewel für Ihre Unterstützung!** 🙏

@@ -145,7 +145,7 @@ Perfect for:
 🏢 Companies & Startups
 🏛️ Government Agencies
 
-Join the movement: https://github.com/rf-stack/core
+Join the movement: https://github.com/ViewunitySystem/auditable-rf-stack
 Contact: gentlyoverdone@outlook.com
 
 #OpenSource #RFSecurity #IoT #Compliance #Innovation
@@ -166,7 +166,7 @@ Contact: gentlyoverdone@outlook.com
 
 8/ Perfect for universities, companies, government agencies
 9/ Market opportunity: €500+ billion RF/IoT market
-10/ Join us: https://github.com/rf-stack/core
+10/ Join us: https://github.com/ViewunitySystem/auditable-rf-stack
 
 #OpenSource #RFSecurity #IoT
 ```
@@ -178,7 +178,7 @@ Contact: gentlyoverdone@outlook.com
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Node.js 18+](https://img.shields.io/badge/node.js-18+-green.svg)](https://nodejs.org/)
-[![Production Ready](https://img.shields.io/badge/status-production--ready-brightgreen.svg)](https://github.com/rf-stack/core)
+[![Production Ready](https://img.shields.io/badge/status-production--ready-brightgreen.svg)](https://github.com/ViewunitySystem/auditable-rf-stack)
 
 > **The world's first fully auditable RF communication system - every action is traceable, every signal is documented, every component is certified.**
 
@@ -193,7 +193,7 @@ Contact: gentlyoverdone@outlook.com
 
 ```bash
 # Clone the repository
-git clone https://github.com/rf-stack/core.git
+git clone https://github.com/ViewunitySystem/auditable-rf-stack.git
 cd rf-stack-core
 
 # Install dependencies
@@ -207,7 +207,7 @@ npm run dev
 
 ## 📊 Production Ready
 
-- ✅ **2544 modules** successfully built
+- ✅ **Complete RF system** successfully implemented
 - ✅ **100% TypeScript compilation** without errors  
 - ✅ **Hardware-in-the-loop tests** with real RF hardware
 - ✅ **Complete CI/CD pipeline** with automated testing
@@ -277,7 +277,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
         <p>Perfect for developers, researchers, companies, and government agencies.</p>
         
         <div style="text-align: center; margin: 30px 0;">
-            <a href="https://github.com/rf-stack/core" style="background: #007bff; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; display: inline-block;">View on GitHub</a>
+            <a href="https://github.com/ViewunitySystem/auditable-rf-stack" style="background: #007bff; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; display: inline-block;">View on GitHub</a>
         </div>
         
         <h3>📚 Documentation</h3>
@@ -335,7 +335,7 @@ The project is fully open source under MIT license, ensuring maximum accessibili
 
 **Contact Information:**
 - Email: gentlyoverdone@outlook.com
-- GitHub: https://github.com/rf-stack/core
+- GitHub: https://github.com/ViewunitySystem/auditable-rf-stack
 - Website: https://tel1.nl (see footer)
 
 **About the Founders:**
@@ -405,9 +405,9 @@ R.D.TEL and Gentlyoverdone are leading the development of this revolutionary sys
 #### **GitHub Analytics**
 ```bash
 # Repository statistics
-gh api repos/rf-stack/core/stats/contributors
-gh api repos/rf-stack/core/traffic/views
-gh api repos/rf-stack/core/traffic/clones
+gh api repos/ViewunitySystem/auditable-rf-stack/stats/contributors
+gh api repos/ViewunitySystem/auditable-rf-stack/traffic/views
+gh api repos/ViewunitySystem/auditable-rf-stack/traffic/clones
 ```
 
 #### **Web Analytics**
@@ -456,7 +456,7 @@ gh api repos/rf-stack/core/traffic/clones
 - **Organisation:** TEL & Gentlyoverdone - 2025 | TELCO TELEKOM
 
 ### **🌐 Online-Präsenz**
-- **GitHub:** https://github.com/rf-stack/core
+- **GitHub:** https://github.com/ViewunitySystem/auditable-rf-stack
 - **Website:** https://tel1.nl (siehe Footer)
 - **Discord:** https://discord.gg/rf-stack-community
 - **LinkedIn:** https://linkedin.com/company/rf-stack
@@ -494,7 +494,7 @@ gh api repos/rf-stack/core/traffic/clones
 
 **Kontakt:** gentlyoverdone@outlook.com  
 **Spenden:** https://tel1.nl (siehe Footer)  
-**Community:** https://github.com/rf-stack/core  
+**Community:** https://github.com/ViewunitySystem/auditable-rf-stack  
 
 **Dankjewel für Ihre Unterstützung!** 🙏
 

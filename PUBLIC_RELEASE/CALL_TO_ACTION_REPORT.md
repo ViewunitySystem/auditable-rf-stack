@@ -76,7 +76,7 @@ Dieser Bericht ist eine **Einladung** und **Aufforderung** an Entwickler, Forsch
 
 ### **Schritt 1: Repository Klonen**
 ```bash
-git clone https://github.com/rf-stack/core.git
+git clone https://github.com/ViewunitySystem/auditable-rf-stack.git
 cd rf-stack-core
 ```
 
@@ -116,7 +116,7 @@ python cert_engine.py
 ## 📊 **BEWEISE DER FUNKTIONSFÄHIGKEIT**
 
 ### **✅ Vollständige Test-Suite**
-- **2544 Module** erfolgreich transformiert
+- **Complete RF system** erfolgreich implementiert
 - **100% TypeScript Compilation** ohne Fehler
 - **Hardware-in-the-Loop Tests** mit echter Hardware
 - **WebSocket-Kommunikation** vollständig funktional
@@ -360,7 +360,7 @@ your_hardware = "Your RF Hardware Model"
 - **Organisation:** TEL & Gentlyoverdone - 2025 | TELCO TELEKOM
 
 ### **🌐 Online-Präsenz**
-- **GitHub:** https://github.com/rf-stack/core
+- **GitHub:** https://github.com/ViewunitySystem/auditable-rf-stack
 - **Website:** https://tel1.nl (siehe Footer)
 - **Discord:** https://discord.gg/rf-stack-community
 - **LinkedIn:** https://linkedin.com/company/rf-stack
@@ -453,7 +453,7 @@ Der auditable RF-Stack ist nicht nur ein technisches Projekt, sondern eine **Bew
 
 **Kontakt:** gentlyoverdone@outlook.com  
 **Spenden:** https://tel1.nl (siehe Footer)  
-**Community:** https://github.com/rf-stack/core  
+**Community:** https://github.com/ViewunitySystem/auditable-rf-stack  
 **Dankjewel für Ihre Unterstützung!** 🙏
 
 ---

@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Node.js 18+](https://img.shields.io/badge/node.js-18+-green.svg)](https://nodejs.org/)
-[![Production Ready](https://img.shields.io/badge/status-production--ready-brightgreen.svg)](https://github.com/rf-stack/core)
+[![Production Ready](https://img.shields.io/badge/status-production--ready-brightgreen.svg)](https://github.com/ViewunitySystem/auditable-rf-stack)
 
 > **The world's first fully auditable RF communication system - every action is traceable, every signal is documented, every component is certified.**
 
@@ -18,8 +18,8 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/rf-stack/core.git
-cd rf-stack-core
+git clone https://github.com/ViewunitySystem/auditable-rf-stack.git
+cd auditable-rf-stack
 
 # Install dependencies
 pip install -r requirements.txt
@@ -30,13 +30,13 @@ python server_real_rf_system.py --port /dev/ttyUSB0
 npm run dev
 ```
 
-## 📊 Production Ready
+## 📊 Current Status
 
-- ✅ **2544 modules** successfully built
-- ✅ **100% TypeScript compilation** without errors  
-- ✅ **Hardware-in-the-loop tests** with real RF hardware
-- ✅ **Complete CI/CD pipeline** with automated testing
-- ✅ **Docker deployment** ready for production
+- ✅ **React/TypeScript Frontend** - Web-based RF control interface
+- ✅ **Python Backend** - Hardware integration and WebSocket server
+- ✅ **Real Hardware Support** - RTL2832U SDR, SX1276 LoRa, OpenBCI
+- ✅ **Audit System** - Complete traceability and compliance checking
+- ✅ **Docker Support** - Containerized deployment ready
 
 ## 🌍 Join the Community
 
@@ -103,5 +103,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 5. **Submit an RFC** - propose improvements
 
 **Contact:** gentlyoverdone@outlook.com  
-**Community:** https://github.com/rf-stack/core  
+**Community:** https://github.com/ViewunitySystem/auditable-rf-stack  
 **Dankjewel for your support!** 🙏

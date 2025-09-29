@@ -16,7 +16,7 @@ Die RF-Stack-Community ist eine offene, inklusive und transparente Gemeinschaft 
 ## 🏗️ **COMMUNITY-ARCHITEKTUR**
 
 ### **Open Core Repository**
-- **Haupt-Repository:** https://github.com/rf-stack/core
+- **Haupt-Repository:** https://github.com/ViewunitySystem/auditable-rf-stack
 - **License:** MIT (Open Source)
 - **Governance:** Demokratisch durch RFC-System
 - **Audit:** Jeder Commit ist auditierbar und nachvollziehbar
